@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/index.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header class="w-full overflow-hidden">
+      <div>
+        <nav
+          class="w-[100%] m-auto flex sm:p-5 p-3 justify-between bg-[#e8e7e7]"
+        >
+          <!-- subscribe letter -->
+          <div class="">
+            <button
+              class="bg-[#d6d9d0] rounded-xl sm:p-3 p-2 flex items-center hover:bg-[#b8beb2] sm:w-[200px] w-[10vw] justify-center outline-none"
+              id="subBtn"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 3.75H6.912a2.25 2.25 0 00-2.15 1.588L2.35 13.177a2.25 2.25 0 00-.1.661V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 00-2.15-1.588H15M2.25 13.5h3.86a2.25 2.25 0 012.012 1.244l.256.512a2.25 2.25 0 002.013 1.244h3.218a2.25 2.25 0 002.013-1.244l.256-.512a2.25 2.25 0 012.013-1.244h3.859M12 3v8.25m0 0l-3-3m3 3l3-3"
+                />
+              </svg>
+              <span class="sm:text-lg text-sm sm:mx-2 mx-1 sm:block hidden"
+                >Get Email</span
+              >
+            </button>
+          </div>
+
+          <!-- letter box Pupup -->
+          <div
+            class="hidden z-10 absolute top-0 left-0 w-full h-[100vh] bg-[#7a7d684b] backdrop-blur-sm"
+            id="letterBox"
+          >
+            <section
+              class="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2"
+            >
+              <form action="app.html" class="flex">
+                <div class="flex w-auto sm:flex-row flex-col">
+                  <div
+                    class="bg-[#7a7d68] flex flex-col justify-center sm:w-[25vw] w-[80vw] p-4 sm:rounded-tl-xl sm:rounded-bl-xl"
+                  >
+                    <span class="text-2xl text-[#fafafa]"
+                      >Sign Up For New Updates</span
+                    >
+                    <span class="text-sm text-[#d6d9d0]">
+                      Get the update notification on your email by subscribing
+                      to this newsletter.
+                    </span>
+                  </div>
+
+                  <div class="bg-[#f4f4f4] p-4 flex flex-col sm:rounded-r-xl">
+                    <input
+                      type="email"
+                      placeholder="Enter Your Email"
+                      class="p-3 sm:w-[25vw] w-[70vw] outline-none rounded-xl border placeholder:text-slate-400 focus:placeholder-transparent focus-within:ring focus-within:border-[#7a7d68] focus-within:ring-[#7a7d68] focus-within:ring-opacity-40"
+                    />
+                    <button
+                      class="p-3 rounded-xl mt-3 bg-[#d6d9d0] hover:bg-[#b8beb2] uppercase font-bold"
+                    >
+                      Subscribe
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </section>
+
+            <!-- close button -->
+            <button
+              class="absolute top-[25%] left-[50%] transform -translate-x-1/2 -translate-y-[50%] bg-[#a3a99d] p-2 rounded-xl hover:bg-[#7a7d68]"
+              id="clsLetter"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <!-- logo part -->
+          <div class="flex items-center">
+            <img
+              src="/assets/GR-logos_black.png"
+              alt="logo"
+              class="sm:w-[50px] w-[35px] sm:h-[50px] h-[35px]"
+            />
+            <span class="sm:text-4xl text-xl ml-2">Blog</span
+            ><span class="sm:text-2xl text-sm">'s</span>
+          </div>
+
+          <!-- search part -->
+          <div class="sm:flex items-center">
+            <button
+              class="bg-[#d6d9d0] sm:p-3 p-2 rounded-xl items-center hover:bg-[#b8beb2] sm:w-[200px] w-[10vw] flex justify-center"
+              id="searchBtn"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                />
+              </svg>
+              <span class="text-xl mx-2 sm:block hidden">Search</span>
+            </button>
+          </div>
+
+          <!-- search box popup-->
+          <div
+            class="hidden z-10 absolute bg-[#7a7d684b] backdrop-blur-sm w-full h-[100vh] top-0 left-0"
+            id="hiddenBox"
+          >
+            <form action="app.html" method="get" class="relative h-screen">
+              <!-- search bar -->
+              <input
+                type="text"
+                class="p-3 w-[90%] absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 outline-none rounded-xl"
+                placeholder="Search"
+              />
+              <button
+                class="absolute left-[93%] top-1/2 transform -translate-x-[93%] -translate-y-1/2 bg-white"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                  />
+                </svg>
+              </button>
+            </form>
+            <!-- cancel button -->
+            <button
+              class="absolute top-[25%] left-[50%] transform -translate-x-1/2 -translate-y-[50%] bg-[#a3a99d] p-2 rounded-xl hover:bg-[#7a7d68]"
+              id="closeBtn"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- sticky navbar -->
+    <section class="w-full sticky top-0 h-[5vh] bg-[#d6d9d0] flex items-center">
+      <div class="flex w-[90%] m-auto">
+        <ul class="flex w-full justify-evenly relative">
+          <li>
+            <a
+              href=""
+              class="hover:bg-[#7a7d68] inherit hover:text-[#f4f4f4] p-2 transition-colors"
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              href=""
+              class="hover:bg-[#7a7d68] inherit hover:text-[#f4f4f4] p-2 transition-colors"
+            >
+              Tech
+            </a>
+          </li>
+          <li>
+            <a
+              href=""
+              class="hover:bg-[#7a7d68] inherit hover:text-[#f4f4f4] p-2 transition-colors"
+            >
+              Case Study
+            </a>
+          </li>
+          <li>
+            <a
+              href=""
+              class="hover:bg-[#7a7d68] inherit hover:text-[#f4f4f4] p-2 transition-colors"
+              >Business</a
+            >
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- blog contents -->
+    <section class="flex sm:justify-evenly justify-between">
+      <div class="h-[150vh] sm:basis-[60%] basis-[100%] bg-slate-700"></div>
+      <div
+        class="h-[50vh] my-20 sm:basis-[25%] basis-[0] sticky top-[5%] bg-slate-500"
+      ></div>
+    </section>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
