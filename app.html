@@ -7,8 +7,9 @@
     <title>Grenish - Blogs</title>
     <link rel="stylesheet" href="index.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    
   </head>
-  <body class="font-[Poppins] bg-[#fafafa] overflow-hidden">
+  <body class="font-[Poppins] bg-[#fafafa]">
     <!-- navbar -->
     <header class="w-full overflow-hidden">
       <div>
@@ -145,11 +146,11 @@
               <!-- search bar -->
               <input
                 type="text"
-                class="p-3 w-[90%] absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 outline-none rounded-xl"
+                class="p-3 sm:w-[50%] w-[80%] absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 outline-none rounded-xl"
                 placeholder="Search"
               />
               <button
-                class="absolute left-[93%] top-1/2 transform -translate-x-[93%] -translate-y-1/2 bg-white"
+                class="absolute sm:left-[74%] left-[85%] top-1/2 transform -translate-x-[93%] -translate-y-1/2 bg-white"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -193,7 +194,7 @@
     </header>
 
     <!-- sticky navbar -->
-    <section class="w-full sticky h-[5vh] bg-[#d6d9d0] flex items-center">
+    <section class="w-full sticky top-0 h-[5vh] bg-[#d6d9d0] flex items-center">
       <div class="flex w-[90%] m-auto">
         <ul class="flex w-full justify-evenly relative">
           <li>
@@ -231,6 +232,10 @@
       </div>
     </section>
 
+    <!-- carousel -->
+    
+
+    
     <script src="script.js"></script>
     <script src="tailwind.config.js"></script>
   </body>
