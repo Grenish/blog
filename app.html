@@ -43,7 +43,7 @@
 
           <!-- letter box Pupup -->
           <div
-            class="hidden absolute top-0 left-0 w-full h-[100vh] bg-[#7a7d684b] backdrop-blur-sm"
+            class="hidden z-10 absolute top-0 left-0 w-full h-[100vh] bg-[#7a7d684b] backdrop-blur-sm"
             id="letterBox"
           >
             <section
@@ -138,7 +138,7 @@
 
           <!-- search box popup-->
           <div
-            class="hidden absolute bg-[#7a7d684b] backdrop-blur-sm w-full h-[100vh] top-0 left-0"
+            class="hidden z-10 absolute bg-[#7a7d684b] backdrop-blur-sm w-full h-[100vh] top-0 left-0"
             id="hiddenBox"
           >
             <form action="app.html" method="get" class="relative h-screen">
@@ -193,34 +193,39 @@
     </header>
 
     <!-- sticky navbar -->
-    <section class="w-full sticky h-[5vh] bg-[#b8beb2]">
-      <div class="flex w-full">
-        <ul>
-          <li class="flex">
-            Home
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="w-6 h-6"
+    <section class="w-full sticky h-[5vh] bg-[#d6d9d0] flex items-center">
+      <div class="flex w-[90%] m-auto">
+        <ul class="flex w-full justify-evenly relative">
+          <li>
+            <a
+              href=""
+              class="hover:bg-[#7a7d68] inherit hover:text-[#f4f4f4] p-2 transition-colors"
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-              />
-            </svg>
+              Home
+            </a>
           </li>
           <li>
-            Tech
+            <a
+              href=""
+              class="hover:bg-[#7a7d68] inherit hover:text-[#f4f4f4] p-2 transition-colors"
+            >
+              Tech
+            </a>
           </li>
           <li>
-            Case Study
+            <a
+              href=""
+              class="hover:bg-[#7a7d68] inherit hover:text-[#f4f4f4] p-2 transition-colors"
+            >
+              Case Study
+            </a>
           </li>
           <li>
-            Test
+            <a
+              href=""
+              class="hover:bg-[#7a7d68] inherit hover:text-[#f4f4f4] p-2 transition-colors"
+              >Business</a
+            >
           </li>
         </ul>
       </div>
