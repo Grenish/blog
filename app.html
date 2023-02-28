@@ -12,7 +12,9 @@
     <!-- navbar -->
     <header class="w-full overflow-hidden">
       <div>
-        <nav class="w-[100%] m-auto flex sm:p-5 p-3 justify-between bg-[#e8e7e7]">
+        <nav
+          class="w-[100%] m-auto flex sm:p-5 p-3 justify-between bg-[#e8e7e7]"
+        >
           <!-- subscribe letter -->
           <div class="">
             <button
@@ -33,13 +35,15 @@
                   d="M9 3.75H6.912a2.25 2.25 0 00-2.15 1.588L2.35 13.177a2.25 2.25 0 00-.1.661V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 00-2.15-1.588H15M2.25 13.5h3.86a2.25 2.25 0 012.012 1.244l.256.512a2.25 2.25 0 002.013 1.244h3.218a2.25 2.25 0 002.013-1.244l.256-.512a2.25 2.25 0 012.013-1.244h3.859M12 3v8.25m0 0l-3-3m3 3l3-3"
                 />
               </svg>
-              <span class="sm:text-lg text-sm sm:mx-2 mx-1 sm:block hidden">Get Email</span>
+              <span class="sm:text-lg text-sm sm:mx-2 mx-1 sm:block hidden"
+                >Get Email</span
+              >
             </button>
           </div>
 
           <!-- letter box Pupup -->
           <div
-            class="hidden absolute top-0 left-0 w-full h-[100vh] bg-[#7a7d684b] backdrop-blur-sm"
+            class="hidden z-10 absolute top-0 left-0 w-full h-[100vh] bg-[#7a7d684b] backdrop-blur-sm"
             id="letterBox"
           >
             <section
@@ -134,7 +138,7 @@
 
           <!-- search box popup-->
           <div
-            class="hidden absolute bg-[#7a7d684b] backdrop-blur-sm w-full h-[100vh] top-0 left-0"
+            class="hidden z-10 absolute bg-[#7a7d684b] backdrop-blur-sm w-full h-[100vh] top-0 left-0"
             id="hiddenBox"
           >
             <form action="app.html" method="get" class="relative h-screen">
@@ -187,8 +191,44 @@
         </nav>
       </div>
     </header>
-    <section class="w-full sticky h-[5vh] bg-[#b8beb2]">
-      
+
+    <!-- sticky navbar -->
+    <section class="w-full sticky h-[5vh] bg-[#d6d9d0] flex items-center">
+      <div class="flex w-[90%] m-auto">
+        <ul class="flex w-full justify-evenly relative">
+          <li>
+            <a
+              href=""
+              class="hover:bg-[#7a7d68] inherit hover:text-[#f4f4f4] p-2 transition-colors"
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              href=""
+              class="hover:bg-[#7a7d68] inherit hover:text-[#f4f4f4] p-2 transition-colors"
+            >
+              Tech
+            </a>
+          </li>
+          <li>
+            <a
+              href=""
+              class="hover:bg-[#7a7d68] inherit hover:text-[#f4f4f4] p-2 transition-colors"
+            >
+              Case Study
+            </a>
+          </li>
+          <li>
+            <a
+              href=""
+              class="hover:bg-[#7a7d68] inherit hover:text-[#f4f4f4] p-2 transition-colors"
+              >Business</a
+            >
+          </li>
+        </ul>
+      </div>
     </section>
 
     <script src="script.js"></script>
