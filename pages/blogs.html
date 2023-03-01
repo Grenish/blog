@@ -4,17 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Grenish - Blogs</title>
-    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/index.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
-    />
   </head>
-  <body class="font-[Poppins] bg-[#fafafa]">
-    <!-- navbar -->
+  <body>
     <header class="w-full overflow-hidden">
       <div>
         <nav
@@ -109,7 +103,7 @@
           <!-- logo part -->
           <div class="flex items-center">
             <img
-              src="assets/GR-logos_black.png"
+              src="/assets/GR-logos_black.png"
               alt="logo"
               class="sm:w-[50px] w-[35px] sm:h-[50px] h-[35px]"
             />
@@ -150,11 +144,11 @@
               <!-- search bar -->
               <input
                 type="text"
-                class="p-3 sm:w-[50%] w-[80%] absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 outline-none rounded-xl"
+                class="p-3 w-[90%] absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 outline-none rounded-xl"
                 placeholder="Search"
               />
               <button
-                class="absolute sm:left-[74%] left-[85%] top-1/2 transform -translate-x-[93%] -translate-y-1/2 bg-white"
+                class="absolute left-[93%] top-1/2 transform -translate-x-[93%] -translate-y-1/2 bg-white"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -201,7 +195,7 @@
     <section class="w-full sticky top-0 h-[5vh] bg-[#d6d9d0] flex items-center">
       <div class="flex w-[90%] m-auto">
         <ul class="flex w-full justify-evenly relative">
-          <li data-filter="Home">
+          <li>
             <a
               href=""
               class="hover:bg-[#7a7d68] inherit hover:text-[#f4f4f4] p-2 transition-colors"
@@ -209,7 +203,7 @@
               Home
             </a>
           </li>
-          <li data-filter="Tech">
+          <li>
             <a
               href=""
               class="hover:bg-[#7a7d68] inherit hover:text-[#f4f4f4] p-2 transition-colors"
@@ -217,7 +211,7 @@
               Tech
             </a>
           </li>
-          <li data-filter="Case">
+          <li>
             <a
               href=""
               class="hover:bg-[#7a7d68] inherit hover:text-[#f4f4f4] p-2 transition-colors"
@@ -225,92 +219,25 @@
               Case Study
             </a>
           </li>
-          <li data-filter="Business">
+          <li>
             <a
               href=""
               class="hover:bg-[#7a7d68] inherit hover:text-[#f4f4f4] p-2 transition-colors"
+              >Business</a
             >
-              Business
-            </a>
-          </li>
-          <li data-filter="Anime">
-            <a
-              href=""
-              class="hover:bg-[#7a7d68] inherit hover:text-[#f4f4f4] p-2 transition-colors"
-            >
-              Anime
-            </a>
           </li>
         </ul>
       </div>
     </section>
 
-    <!-- carousel -->
-    <section id="image-carousel" class="splide" aria-label="Beautiful Images">
-      <div class="splide__track">
-        <ul class="splide__list">
-          <li
-            class="splide__slide flex sm:items-end items-end sm:justify-start justify-center"
-          >
-            <img src="assets/anime-in-india.jpg" alt="" />
-            <div
-              class="bg-[#f4f4f467] backdrop-blur-md rounded-xl shadow-md sm:w-[500px] w-[250px] mb-10 sm:ml-20 ml-0 p-3"
-            >
-              <a href="Anime-Goes-Mainstream.html" class="flex flex-col">
-                <span class="text-2xl font-bold hover:underline">
-                  Anime Goes Mainstream: A Look at its Rapid Rise in India
-                </span>
-                <span class="text-sm hover:underline">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Dolorum mollitia asperiores quae architecto optio esse.
-                </span>
-              </a>
-            </div>
-          </li>
-
-          <li
-            class="splide__slide flex sm:items-end items-end sm:justify-start justify-center"
-          >
-            <img src="assets/bootstrap.jpg" alt="" />
-            <div
-              class="bg-[#f4f4f467] backdrop-blur-md rounded-xl shadow-md sm:w-[500px] w-[250px] mb-10 sm:ml-20 ml-0 p-3"
-            >
-              <a href="Is-Bootstrap-Worth-Learning.html" class="flex flex-col">
-                <span class="text-2xl font-bold hover:underline">
-                  Is Bootstrap Worth Learning in 2022? An Analysis
-                </span>
-                <span class="text-sm hover:underline">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Dolorum mollitia asperiores quae architecto optio esse.
-                </span>
-              </a>
-            </div>
-          </li>
-          <li
-            class="splide__slide flex sm:items-end items-end sm:justify-start justify-center"
-          >
-            <img src="assets/netflix-case-study.jpg" alt="Netflix Case Study" />
-            <div
-              class="bg-[#f4f4f467] backdrop-blur-md rounded-xl shadow-md sm:w-[500px] w-[250px] mb-10 sm:ml-20 ml-0 p-3"
-            >
-              <a href="From-DVD-Rentals-to-Global-Streaming-Giant.html" class="flex flex-col">
-                <span class="text-2xl font-bold hover:underline">
-                  From DVD Rentals to Global Streaming Giant: A Netflix Case Study
-                </span>
-                <span class="text-sm hover:underline">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Dolorum mollitia asperiores quae architecto optio esse.
-                </span>
-              </a>
-            </div>
-          </li>
-        </ul>
-      </div>
+    <!-- blog contents -->
+    <section class="flex sm:justify-evenly justify-between">
+      <div class="h-[150vh] sm:basis-[60%] basis-[100%] bg-slate-700"></div>
+      <div
+        class="h-[50vh] my-20 sm:basis-[25%] basis-[0] sticky top-[5%] bg-slate-500"
+      ></div>
     </section>
 
-    <script src="path-to-the-script/splide-extension-intersection.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-    <script src="script.js"></script>
-    <script src="tailwind.config.js"></script>
+    <script src="/script.js"></script>
   </body>
 </html>
