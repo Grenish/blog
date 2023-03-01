@@ -23,3 +23,30 @@ clsLetter.addEventListener("click", () => {
   letterBox.style.display = "none";
 });
 
+
+document.addEventListener("DOMContentLoaded", function () {
+  new Splide("#image-carousel", {
+    width: "100vw",
+    height: "60vh",
+    autoplay: true,
+    loop: true,
+    rewind: true,
+    cover: true,
+    heightRatio: 0.5,
+    heightRatio: 0.5,
+  }).mount();
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  new Splide("#image-carousel", {
+    width: "100vw",
+    height: "60vh",
+    autoplay: true,
+    loop: true,
+    rewind: true,
+    cover: true,
+    heightRatio: 0.5,
+    heightRatio: 0.5,
+  }).mount();
+});
+
