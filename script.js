@@ -34,4 +34,3 @@ document.addEventListener("DOMContentLoaded", function () {
     heightRatio: 0.5,
   }).mount();
 });
-
