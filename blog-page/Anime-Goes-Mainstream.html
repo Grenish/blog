@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anime</title>
+    <link rel="stylesheet" href="/index.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="font-[Poppins]">
+    <header class="w-full overflow-hidden fixed top-0">
+      <div>
+        <nav
+          class="w-[100%] m-auto flex sm:p-5 p-3 justify-between bg-[#e8e7e7]"
+        >
+          <!-- subscribe letter -->
+
+          <!-- logo part -->
+          <div class="flex items-center">
+            <img
+              src="/assets/GR-logos_black.png"
+              alt="logo"
+              class="sm:w-[50px] w-[35px] sm:h-[50px] h-[35px]"
+            />
+            <span class="sm:text-4xl text-xl ml-2">Blog</span
+            ><span class="sm:text-2xl text-sm">'s</span>
+          </div>
+
+          <!-- search part -->
+          <div class="sm:flex items-center">
+            <button
+              class="bg-[#d6d9d0] sm:p-3 p-2 rounded-xl items-center hover:bg-[#b8beb2] sm:w-[200px] w-[10vw] flex justify-center"
+              id="searchBtn"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                />
+              </svg>
+              <span class="text-xl mx-2 sm:block hidden">Search</span>
+            </button>
+          </div>
+
+          <!-- search box popup-->
+          <div
+            class="hidden z-10 fixed bg-[#7a7d684b] backdrop-blur-sm w-full h-[100vh] top-0 left-0"
+            id="hiddenBox"
+          >
+            <form action="app.html" method="get" class="relative h-screen">
+              <!-- search bar -->
+              <input
+                type="text"
+                class="p-3 sm:w-[50%] w-[80%] absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 outline-none rounded-xl"
+                placeholder="Search"
+              />
+              <button
+                class="absolute sm:left-[74%] left-[85%] top-1/2 transform -translate-x-[93%] -translate-y-1/2 bg-white"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                  />
+                </svg>
+              </button>
+            </form>
+            <!-- cancel button -->
+            <button
+              class="absolute top-[25%] left-[50%] transform -translate-x-1/2 -translate-y-[50%] bg-[#a3a99d] p-2 rounded-xl hover:bg-[#7a7d68]"
+              id="closeBtn"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="w-full h-[190vh] bg-rose-200"></section>
+
+    <script src="/script.js"></script>
+    <script src="/tailwind.config.js"></script>
+  </body>
+</html>
