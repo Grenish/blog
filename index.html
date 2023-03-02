@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="index.css" />
     <script src="https://cdn.tailwindcss.com/"></script>
 
-
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
@@ -55,7 +54,12 @@
             <section
               class="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2"
             >
-              <form action="index.html" class="flex">
+              <form
+                name="contact"
+                class="flex"
+                data-netlify="true"
+                method="post"
+              >
                 <div class="flex w-auto sm:flex-row flex-col">
                   <div
                     class="bg-[#7a7d68] flex flex-col justify-center sm:w-[25vw] w-[80vw] p-4 sm:rounded-tl-xl sm:rounded-bl-xl"
@@ -70,12 +74,16 @@
                   </div>
 
                   <div class="bg-[#f4f4f4] p-4 flex flex-col sm:rounded-r-xl">
+                    <input type="hidden" name="form-name" value="contact" />
+
                     <input
                       type="email"
+                      name="email"
                       placeholder="Enter Your Email"
                       class="p-3 sm:w-[25vw] w-[70vw] outline-none rounded-xl border placeholder:text-slate-400 focus:placeholder-transparent focus-within:ring focus-within:border-[#7a7d68] focus-within:ring-[#7a7d68] focus-within:ring-opacity-40"
                     />
                     <button
+                      type="submit"
                       class="p-3 rounded-xl mt-3 bg-[#d6d9d0] hover:bg-[#b8beb2] uppercase font-bold"
                     >
                       Subscribe
@@ -199,7 +207,9 @@
     </header>
 
     <!-- sticky navbar -->
-    <section class="w-full z-0 sticky top-0 h-[5vh] bg-[#d6d9d0] flex items-center">
+    <section
+      class="w-full z-0 sticky top-0 h-[5vh] bg-[#d6d9d0] flex items-center"
+    >
       <div class="flex w-[90%] m-auto">
         <ul class="flex w-full justify-evenly relative">
           <li data-filter="Home">
@@ -233,8 +243,6 @@
             >
               Business
             </a>
-
-
           </li>
           <li data-filter="Anime">
             <a
@@ -296,9 +304,13 @@
             <div
               class="bg-[#f4f4f467] backdrop-blur-md rounded-xl shadow-md sm:w-[500px] w-[250px] mb-10 sm:ml-20 ml-0 p-3"
             >
-              <a href="From-DVD-Rentals-to-Global-Streaming-Giant.html" class="flex flex-col">
+              <a
+                href="From-DVD-Rentals-to-Global-Streaming-Giant.html"
+                class="flex flex-col"
+              >
                 <span class="text-2xl font-bold hover:underline">
-                  From DVD Rentals to Global Streaming Giant: A Netflix Case Study
+                  From DVD Rentals to Global Streaming Giant: A Netflix Case
+                  Study
                 </span>
                 <span class="text-sm hover:underline">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -306,7 +318,6 @@
                 </span>
               </a>
             </div>
-
           </li>
           <li data-filter="Anime">
             <a
@@ -324,7 +335,6 @@
     <section id="image-carousel" class="splide" aria-label="Beautiful Images">
       <div class="splide__track">
         <ul class="splide__list">
-
           <li
             class="splide__slide flex sm:items-end items-end sm:justify-start justify-center"
           >
@@ -332,7 +342,10 @@
             <div
               class="bg-[#f4f4f467] backdrop-blur-md rounded-xl shadow-md sm:w-[500px] w-[250px] mb-10 sm:ml-20 ml-0 p-3"
             >
-              <a href="blog-page/Anime-Goes-Mainstream.html" class="flex flex-col">
+              <a
+                href="blog-page/Anime-Goes-Mainstream.html"
+                class="flex flex-col"
+              >
                 <span class="text-2xl font-bold hover:underline">
                   Anime Goes Mainstream: A Look at its Rapid Rise in India
                 </span>
@@ -370,17 +383,22 @@
             <div
               class="bg-[#f4f4f467] backdrop-blur-md rounded-xl shadow-md sm:w-[500px] w-[250px] mb-10 sm:ml-20 ml-0 p-3"
             >
-              <a href="From-DVD-Rentals-to-Global-Streaming-Giant.html" class="flex flex-col">
+              <a
+                href="From-DVD-Rentals-to-Global-Streaming-Giant.html"
+                class="flex flex-col"
+              >
                 <span class="text-2xl font-bold hover:underline">
-                  From DVD Rentals to Global Streaming Giant: A Netflix Case Study
+                  From DVD Rentals to Global Streaming Giant: A Netflix Case
+                  Study
                 </span>
                 <span class="text-sm hover:underline">
-                  Netflix Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias quod aspernatur accusamus quis amet? Aperiam, veritatis!
+                  Netflix Lorem ipsum dolor sit amet, consectetur adipisicing
+                  elit. Molestias quod aspernatur accusamus quis amet? Aperiam,
+                  veritatis!
                 </span>
               </a>
             </div>
           </li>
-
         </ul>
       </div>
     </section>
